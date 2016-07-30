@@ -9,7 +9,8 @@ class Api::V1::CommentsController < ApplicationController
   end
 
   private
-    def comment_params
-      params.permit(:author, :text)
-    end
+
+  def comment_params
+    params.permit(:author, :text)
+  end
 end
