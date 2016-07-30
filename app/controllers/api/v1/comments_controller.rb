@@ -4,7 +4,7 @@ class Api::V1::CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.creat(comment_params)
+    @comment = Comment.create(comment_params)
     render :show, status: :created
   end
 
